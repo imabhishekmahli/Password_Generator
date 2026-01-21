@@ -8,13 +8,22 @@
 <body>
   <div class="container">
     <h1>Password Generator</h1>
-    <div class="display-container"></div>
+    <div class="display-container">
       <input readonly placeholder="Password" class="display" data-passwordDisplay>
       <button>
         <span data-copyMsg></span>
         <img src="assets/copyImage.png" alt="copy" width="23" height="23">
       </button>
+    </div>
 
+
+    <div class="input-container">
+      <div class="length-container">
+        <p>Password Length</p>
+        <p data-lengthNumber>0</p>
+      </div>
+      <input type="range" min="1" max="12" class="slider" step="1" data-lengthSlider>
+    </div>
   </div>
 </body>
 </html>
